@@ -1,5 +1,5 @@
 # EuroSkills Herning 2025 nemzeti válogató, Skill 17 (Web Development)
-
+d
 [English version](https://github.com/skillsit-hu/es2025-s17-hu-r1/blob/master/README_EN.md)
 
 ![EuroSkills Herning 2025](https://skillsit.hu/wp-content/uploads/2024/01/es2025-herning.png)
