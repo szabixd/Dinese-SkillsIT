@@ -4,6 +4,8 @@ html {
 }
 
 body {
+    max-width: 100%;
+    max-height: auto;
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
@@ -20,6 +22,8 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 150px;
+    max-width: 100%;
+    max-height: 100%;
     width: 100%;
     color: aliceblue;
     min-height: 60px;
@@ -51,6 +55,7 @@ section {
 
 .container {
     display: flex;
+    justify-content: space-between;
 }
 
 .rightdiv,
@@ -74,7 +79,7 @@ section {
 
 #herosectionP {
     font-size: 22px;
-    color: gray;
+    color: #4d5765;
     padding-bottom: 20px;
 }
 
@@ -84,7 +89,7 @@ section {
     align-items: center;
     display: flex;
     border: none;
-    background-color: blueviolet;
+    background-color: #7c3aed;
     color: white;
     padding: 20px;
     width: 230px;
@@ -97,6 +102,117 @@ section {
     padding-right: 20px;
 }
 
+
+.featuredRestaurantsCardDiv {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.featuredRestaurantsCardDiv a {
+    text-decoration: none;
+    color: #884dee;
+    font-weight: bold;
+    font-size: 14px;
+    float: right;
+}
+
+#featuredRestaurantsH1 {
+    font-size: 48px;
+    padding-left: 50px;
+}
+
+#featuredRestaurantsP {
+    font-size: 22px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    color: #202735;
+}
+
+.card {
+    height: 500px;
+    width: 420px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 18px;
+    color: #858b95;
+}
+
+#testimonials {
+    background-color: #ede9fe;
+    background-repeat: repeat;
+    width: 100%;
+    max-height: auto;
+}
+
+#testimonialsSharedCardStorage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#testimonialsHeaderDiv {
+    max-width: 24%;
+    width: 50%;
+    justify-content: center;
+}
+
+#testimonialsH1 {
+    font-size: 48px;
+}
+
+.testimonialsSharedCard {
+    width: 50%;
+    max-height: 180px;
+    width: 300px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.testimonialsSharedCard-content {
+    padding: 20px;
+}
+
+.testimonialsSharedCard-description {
+    font-size: 18px;
+    color: #151c2b;
+}
+
+.testimonialsSharedcardAuthor {
+    font-weight: bold;
+    font-size: 14px;
+    bottom: 0;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -104,8 +220,36 @@ footer {
     padding-left: 100px;
     text-align: left;
     position: relative;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     margin-top: 20px;
+}
+
+#footerleftdiv,
+#footerrightdiv {
+    position: relative;
+    flex: 1;
+}
+
+#footerrightdiv {
+    padding-right: 150px;
+}
+
+#footerrightdiv img {
+    float: right;
+    padding: 5px;
+}
+
+#footerrightdiv p {
+    width: 120px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#privacyGO {
+    text-decoration: none;
+    color: white;
 }
 
 #copyrightSmall {
