@@ -1,0 +1,137 @@
+html {
+    min-height: 100dvh;
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: white;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+    width: 100%;
+    color: aliceblue;
+    min-height: 60px;
+    font-size: 16px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#homeHyper {
+    margin-left: 30px;
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+section {
+    border: none;
+    padding: 20px;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.rightdiv,
+.leftdiv {
+    flex: 1;
+}
+
+.rightdiv {
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.leftdiv {
+    padding-left: 110px;
+    padding-top: 220px;
+}
+
+#herosectionH1 {
+    font-size: 62px;
+}
+
+#herosectionP {
+    font-size: 22px;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+#searchRestaurants {
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#searchRestaurants img {
+    padding-right: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    padding-left: 100px;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#copyrightSmall {
+    color: lightgray;
+    font-size: small;
+    padding-top: 20px;
+}
+
+.shapeCircle {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
