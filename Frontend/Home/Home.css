@@ -16,41 +16,41 @@ body {
     flex-direction: column;
 }
 
-nav {
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5;
     background-color: white;
-    padding: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 150px;
     max-width: 100%;
     max-height: 100%;
     width: 100%;
-    color: aliceblue;
     min-height: 60px;
     font-size: 16px;
+}
+
+.navbarlinks {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    position: fixed;
-    top: 0;
+    gap: 50px;
+}
+
+.navbarlinks a {
+    text-decoration: none;
+    color: #121212;
+    font-weight: 550;
 }
 
 #homeHyper {
     margin-left: 30px;
 }
 
-nav a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 10px;
-}
-
 section {
     border: none;
-    padding: 20px;
-    margin: 20px;
 }
 
 .container {
@@ -63,14 +63,61 @@ section {
     flex: 1;
 }
 
-.rightdiv {
+.rightdiv img {
     padding-left: 200px;
-    padding-top: 100px;
 }
 
 .leftdiv {
     padding-left: 110px;
-    padding-top: 220px;
+}
+
+.DineEase-landsection {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100%;
+    place-items: CENTER;
+    z-index: 1;
+}
+
+.heroMaindiv {
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.costumeshape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: #f2f2f2;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+    z-index: 0;
+}
+
+.side-rectangle {
+    position: absolute;
+    bottom: 10px;
+    width: 30%;
+    height: 100%;
+    background-color: #7c3aed;
+    z-index: 0;
+}
+
+.left {
+    padding-top: 50px;
+    left: 0;
+    bottom: 0px;
+    height: 60px;
+    clip-path: polygon(0% 54%, 100% 0%, 100% 44%, 0% 100%);
+}
+
+.right {
+    bottom: 120px;
+    right: 0;
+    height: 150px;
+    clip-path: polygon(0% 54%, 100% 0%, 100% 44%, 0% 100%);
 }
 
 #herosectionH1 {
@@ -130,8 +177,8 @@ section {
 }
 
 .card {
-    height: 500px;
-    width: 420px;
+    height: 520px;
+    width: 440px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
@@ -140,25 +187,33 @@ section {
 }
 
 .card img {
-    width: 400px;
+    width: 420px;
     height: 250px;
     border-radius: 20px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 .card-content {
-    padding: 20px;
+    padding: 10px 10px 10px 10px;
 }
 
 .card-title {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .card-description {
     font-size: 18px;
+    padding-bottom: 20px;
     color: #858b95;
+}
+
+.card-footer {
+    bottom: 0;
+    top: 100;
+    float: right;
+    right: 0;
+    left: 100;
 }
 
 #testimonials {
@@ -176,9 +231,11 @@ section {
 }
 
 #testimonialsHeaderDiv {
+    padding-left: 150px;
     max-width: 24%;
     width: 50%;
     justify-content: center;
+    flex: 1;
 }
 
 #testimonialsH1 {
@@ -196,6 +253,7 @@ section {
     margin: 20px;
     overflow: hidden;
     padding: 20px;
+    flex: 1;
 }
 
 .testimonialsSharedCard-content {
@@ -213,11 +271,110 @@ section {
     bottom: 0;
 }
 
+.findRestaurantsInputActiveDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#findRestaurantsInput {
+    width: 80%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.checkbox-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+
+input[type="checkbox"]:checked+.checkbox-check {
+    opacity: 1;
+}
+
+.findRestaurantsCheckBox {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.findRestaurantsInputActiveDiv button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ede9fe;
+    color: #8345ed;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.findRestaurantsInputActiveDiv button:hover {
+    background-color: #555;
+}
+
+.findRestaurantsCardDiv {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.findRestaurantsCardDiv a {
+    text-decoration: none;
+    color: #884dee;
+    font-weight: bold;
+    font-size: 14px;
+    float: right;
+}
+
+#findRestaurantsH1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+#findRestaurantsP {
+    font-size: 22px;
+    color: #202735;
+    text-align: center;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    padding-left: 10px;
+}
+
+.card-header img {
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+}
+
 footer {
     background-color: black;
     color: white;
-    padding: 50px;
-    padding-left: 100px;
+    padding: 100px 10px 50px 100px;
     text-align: left;
     position: relative;
     max-width: 100%;

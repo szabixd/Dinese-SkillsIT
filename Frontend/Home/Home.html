@@ -10,30 +10,43 @@
 </head>
 
 <body>
-    <nav>
-        <img src="../../assets/images/Logo.png">
-        <a id="homeHyper" href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Contact</a>
-    </nav>
+
 
     <section id="herosection">
-        <div class="container">
-            <div class="leftdiv">
-                <div class="circle"></div>
-                <h1 id="herosectionH1">DineEase: Exceptional <br>Dining Awaits.</h1>
-
-                <p id="herosectionP">Dive into culinary wonders with DineEase. We curate top-rated restaurants, each
-                    with distinct flavors
-                    and ambiance. From
-                    international dishes to traditional delights and gastronomic adventures, find your perfect spot with
-                    DineEase.</p>
-
-                <button id="searchRestaurants"><img src="../../assets/images/Search Icon.png">Explore
-                    Restaurants</button>
+        <div class="navbar">
+            <img src="../../assets/images/Logo.png" alt="DineEase">
+            <div class="navbarlinks">
+                <div><a id="homeHyper" href="/Frontend/Home/Home.html">Home</a></div>
+                <div><a href="">About Us</a></div>
+                <div><a href="/Frontend/Contact/Contact.html">Contact</a></div>
             </div>
-            <div class="rightdiv">
-                <img src="../../assets/images/Hero Illustration.png" alt="">
+        </div>
+
+
+        <div class="container heroMaindiv">
+            <div class="DineEase-landsection">
+                <div class="leftdiv" id="leftdiv">
+                    <div class="circle"></div>
+                    <h1 id="herosectionH1">DineEase: Exceptional <br>Dining Awaits.</h1>
+
+                    <p id="herosectionP">Dive into culinary wonders with DineEase. We curate top-rated restaurants, each
+                        with distinct flavors
+                        and ambiance. From
+                        international dishes to traditional delights and gastronomic adventures, find your perfect spot
+                        with
+                        DineEase.</p>
+
+                    <button id="searchRestaurants"><img src="../../assets/images/Search Icon.png">Explore
+                        Restaurants</button>
+                </div>
+                <div class="rightdiv" id="rightdiv">
+                    <img src="../../assets/images/Hero Illustration.png" alt="">
+                </div>
+
+            </div>
+            <div class="costumeshape">
+                <div class="side-rectangle left"></div>
+                <div class="side-rectangle right"></div>
             </div>
         </div>
     </section>
@@ -41,45 +54,93 @@
     <section id="featuredRestaurants">
         <div>
             <div>
-                <h1 id="featuredRestaurantsH1">Featured Restaurants</h1>
+                <h1 id="featuredRestaurantsH1">Find Your Perfect Dining Spot
+                </h1>
                 <p id="featuredRestaurantsP">Discover Unforgettable Dining Destinations</p>
             </div>
             <div class="featuredRestaurantsCardDiv">
                 <div class="card">
                     <img src="../../assets/images/Restaurant2.png" alt="Kép">
                     <div class="card-content">
-                        <div class="card-title">Sarmale Bistro</div>
-                        <p class="card-description">Experience Romania's culinary heart at Sarmale Bistro. Savor
-                            classics with a modern touch in our intimate, authentic
-                            ambiance. Celebrate timeless tradition.</p>
-                        <a href="">View restaurant »</a>
+
+                        <div class="card-header">
+                            <h2>Sarmale Bistro</h2>
+                            <div class="card-ratingstar">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <p>Experience Romania's culinary heart at Sarmale Bistro. Savor
+                                classics with a modern touch in our intimate, authentic
+                                ambiance. Celebrate timeless tradition.</p>
+
+                        </div>
+                        <div>
+                            <a href="">View restaurant »</a>
+                        </div>
 
                     </div>
                 </div>
                 <div class="card">
                     <img src="../../assets/images/Restaurant1.png" alt="Kép">
                     <div class="card-content">
-                        <div class="card-title">La Piața</div>
-                        <p class="card-description">Discover a fusion of Europe's flavors at La Piața, set in the heart
-                            of the city. Savor dishes from locally-sourced
-                            ingredients in our cozy bistro ambiance.</p>
-                        <a href="">View restaurant »</a>
+                        <div class="card-header">
+                            <h2 class="">
+                                La Piața
+                            </h2>
+                            <div class="card-ratingstar">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                            </div>
+
+                        </div>
+                        <div>
+                            <p class="card-description">Discover a fusion of Europe's flavors at La Piața, set in the
+                                heart
+                                of the city. Savor dishes from locally-sourced
+                                ingredients in our cozy bistro ambiance.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="">View restaurant »</a>
+                        </div>
+
 
                     </div>
                 </div>
                 <div class="card">
                     <img src="../../assets/images/Restaurant3.png" alt="Kép">
                     <div class="card-content">
-                        <div class="card-title">Halász Fogadó</div>
-                        <p class="card-description">Immerse in Eastern European authenticity at Halász Fogadó. Relish
-                            traditional dishes amid an atmosphere rich in charm
-                            and history. Join us for a timeless culinary experience.</p>
-                        <a href="">View restaurant »</a>
+                        <div class="card-header">
+                            <h2>Halász Fogadó</h2>
+                            <div class="card-ratingstar">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="card-description">Immerse in Eastern European authenticity at Halász Fogadó.
+                                Relish
+                                traditional dishes amid an atmosphere rich in charm
+                                and history. Join us for a timeless culinary experience.</p>
+
+                        </div>
+                        <div class="card-footer">
+                            <a href="">View restaurant »</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="testimonials">
@@ -117,27 +178,133 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div id="footerleftdiv">
-                <img src="../../assets/images/Logomark.png">
-                <p><a href="" id="privacyGO">Privacy Policy</a></p>
-                <p id="Contact">+36 30 123 4567 support@dineease.com</p>
-                <p id="copyrightSmall">&copy; 2024 - All rights reserved</p>
+
+    <section id="findRestaurants">
+        <div class="findRestaurantsMainDiv">
+            <div class="findRestaurantsDivHeader">
+                <h1 id="findRestaurantsH1">Find Your Perfect Dining Spot
+                </h1>
+                <p id="findRestaurantsP">Search by Cuisine, Location, or Name</p>
+                <div class="findRestaurantsInputActiveDiv" action="/search">
+                    <div>
+                        <input id="findRestaurantsInput" type="text" id="search" name="search"
+                            placeholder="Search for restaurants">
+                        <label id="findRestaurantsCheckBox">
+                            <input type="checkbox">
+                            <img src="../../assets/images/Filter Icon.png" class="checkbox-frame"></img>
+                            <img src="../../assets/images/Filter Icon.png" class="checkbox-check"></img>
+                        </label>
+
+                    </div>
+                    <button type="submit"><i class="fa fa-search"><img src="../../assets/images/Search Icon.png"
+                                alt=""></i></button>
+                </div>
             </div>
-            <div id="footerrightdiv">
-                <p>Follow Us</p>
-                <img src="../../assets/images/Twitter Icon.png" alt="">
-                <img src="../../assets/images/Instagram Icon.png" alt="">
-                <img src="../../assets/images/Facebook Icon.png" alt="">
+            <div class="findRestaurantsCardDiv">
+                <div class="card">
+                    <img src="../../assets/images/Restaurant2.png" alt="Kép">
+                    <div class="card-content">
+
+                        <div class="card-header">
+                            <h2>Sarmale Bistro</h2>
+                            <div class="card-ratingstar">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <p>Experience Romania's culinary heart at Sarmale Bistro. Savor
+                                classics with a modern touch in our intimate, authentic
+                                ambiance. Celebrate timeless tradition.</p>
+
+                        </div>
+                        <div>
+                            <a href="">View restaurant »</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../../assets/images/Restaurant1.png" alt="Kép">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h2 class="">
+                                La Piața
+                            </h2>
+                            <div class="card-ratingstar">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                            </div>
+
+                        </div>
+                        <div>
+                            <p class="card-description">Discover a fusion of Europe's flavors at La Piața, set in
+                                the
+                                heart
+                                of the city. Savor dishes from locally-sourced
+                                ingredients in our cozy bistro ambiance.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="">View restaurant »</a>
+                        </div>
 
 
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../../assets/images/Restaurant3.png" alt="Kép">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h2>Halász Fogadó</h2>
+                            <div class="card-ratingstar">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="../../assets/images/star.png" alt="Star">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="card-description">Immerse in Eastern European authenticity at Halász Fogadó.
+                                Relish
+                                traditional dishes amid an atmosphere rich in charm
+                                and history. Join us for a timeless culinary experience.</p>
+
+                        </div>
+                        <div class="card-footer">
+                            <a href="">View restaurant »</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+    </section>
 
-
-    </footer>
 </body>
+<footer>
+    <div class="container">
+        <div id="footerleftdiv">
+            <img src="../../assets/images/Logomark.png">
+            <p><a href="/Frontend/Privacy/Privacy.html" id="privacyGO">Privacy Policy</a></p>
+            <p id="Contact">+36 30 123 4567 support@dineease.com</p>
+            <p id="copyrightSmall">&copy; 2024 - All rights reserved</p>
+        </div>
+        <div id="footerrightdiv">
+            <p>Follow Us</p>
+            <img src="../../assets/images/Twitter Icon.png" alt="">
+            <img src="../../assets/images/Instagram Icon.png" alt="">
+            <img src="../../assets/images/Facebook Icon.png" alt="">
+
+
+        </div>
+    </div>
+</footer>
 
 </html>
