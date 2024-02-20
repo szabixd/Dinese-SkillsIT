@@ -374,7 +374,7 @@ input[type="checkbox"]:checked+.checkbox-check {
 footer {
     background-color: black;
     color: white;
-    padding: 100px 10px 50px 100px;
+    padding: 50px 10px 50px 100px;
     text-align: left;
     position: relative;
     max-width: 100%;

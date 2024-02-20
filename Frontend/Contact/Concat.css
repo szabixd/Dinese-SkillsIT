@@ -63,10 +63,161 @@ section {
     flex: 1;
 }
 
+.rightContactMainDiv {
+    margin-left: 20px;
+    padding-left: 50px;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    width: 900px;
+    height: 600px;
+}
+
+.contactMainDiv {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100%;
+    place-items: CENTER;
+    z-index: 1;
+    padding-top: 140px;
+    padding-left: 100px;
+}
+
+
+.rightContactInputs {
+    display: grid;
+    grid-template-columns: 40% 20%;
+    grid-template-rows: 50%;
+    place-items: CENTER;
+    z-index: 3;
+}
+
+.rightContactInputs input {
+    z-index: 1;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 240px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+#message {
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-align: start;
+    white-space: pre-wrap;
+    text-wrap: wrap;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+    min-width: 180px;
+    max-width: 500px;
+    min-height: 80px;
+    max-height: 400px;
+    font-size: 16px;
+    margin-left: 280px;
+}
+
+.rightContactInputs button {
+    float: right;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    background-color: #7c3aed;
+    color: white;
+    padding: 20px;
+    width: 160px;
+    height: 50px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.rightContactInputsLeftInputs,
+.rightContactInputsRigthInputs {
+    flex: 1;
+}
+
+.rightContactHeader h1 {
+    font-size: 48px;
+    padding-left: 70px;
+    margin: 0;
+}
+
+.rightContactHeader h2 {
+    font-size: 18px;
+    padding-left: 60px;
+    color: #3a3f4c;
+}
+
+.contact-informationDiv {
+    margin-left: 10px;
+    margin-bottom: 60px;
+    color: white;
+    background-color: #7c3aed;
+    width: 500px;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 80%;
+    height: 600px;
+}
+
+.contact-informationDiv h1 {
+    font-size: 24px;
+}
+
+.contact-informationDiv h4 {
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.contact-informationDiv p {
+    padding: 20px 0px 20px 0px;
+}
+
+#contactLocationSecond {
+    padding-left: 50px;
+}
+
+.contact-informationDivFooter {
+    top: 100;
+    bottom: 0;
+    padding-top: 40px;
+}
+
+.contact-informationDivFooter img {
+    padding: 10px;
+}
+
+.contact-phone img {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.contact-email img {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.contact-location img {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
 footer {
     background-color: black;
     color: white;
-    padding: 100px 10px 50px 100px;
+    padding: 50px 10px 50px 100px;
     text-align: left;
     position: relative;
     max-width: 100%;
