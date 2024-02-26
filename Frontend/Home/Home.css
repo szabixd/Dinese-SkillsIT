@@ -70,19 +70,19 @@ body {
 }
 
 .menuDropDown {
-    left: 0;
+    width: 200px;
     position: absolute;
+    top: 100%;
     line-height: 30px;
-    padding: 30px;
+    padding: 20px;
     background-color: white;
-    text-align: right;
     border: 1px solid gray;
     border-radius: 5px;
     display: none;
 }
 
 .menuDropDown a {
-    padding-top: 180px;
+    padding-top: 10px;
 }
 
 .Sandwichmenu:hover .menuDropDown {
@@ -711,6 +711,7 @@ footer>.container {
 
     .Sandwichmenu {
         display: inline-block;
+        position: relative;
     }
 
     .navbarlinks {
@@ -723,23 +724,37 @@ footer>.container {
     }
 
     .menuDropDown {
-        left: 0;
+        right: 0;
+        height: 120px;
+        width: 650px;
         position: absolute;
         line-height: 30px;
-        padding: 30px;
+        padding-left: 6px;
+        padding-right: 6px;
         background-color: white;
-        text-align: right;
-        border: 1px solid gray;
+        border: 1px solid #999999;
         border-radius: 5px;
         display: none;
+        text-align: center;
     }
 
     .menuDropDown a {
-        padding-top: 180px;
+        text-align: center;
+        padding-top: 10px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #homeHyper {
+        margin-left: 0px;
     }
 
     .Sandwichmenu:hover .menuDropDown {
-        display: block;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .customShapes {
