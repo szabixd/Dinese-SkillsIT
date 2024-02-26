@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var cardStorage = document.getElementById('testimonialsSharedCardStorage');
+    var cardStorage = document.getElementById('testimonialsSharedCardStorage', 'testimonialsHeaderSharedCard');
     var cards = cardStorage.getElementsByClassName('testimonialsSharedCard');
     var cardsArray = Array.from(cards);
 

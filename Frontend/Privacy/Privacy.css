@@ -1,10 +1,11 @@
 html {
     min-height: 100dvh;
-    font-family: Arial;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
     max-width: 100%;
+    width: 100%;
     max-height: auto;
     margin: 0;
     padding: 0px;
@@ -47,6 +48,10 @@ body {
 
 #homeHyper {
     margin-left: 30px;
+}
+
+#PrivacyPolicySection {
+    width: 100%;
 }
 
 .privacyMain {
@@ -100,8 +105,14 @@ footer {
     position: relative;
     max-width: 100%;
     max-height: 100%;
-    margin-top: 20px;
+    margin-top: auto;
     bottom: 0;
+
+}
+
+footer>.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 #footerleftdiv,
