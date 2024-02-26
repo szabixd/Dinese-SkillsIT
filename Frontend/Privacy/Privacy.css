@@ -17,6 +17,17 @@ body {
     flex-direction: column;
 }
 
+@media (max-width: 767px) {
+    .navbarlinks {
+        display: none;
+    }
+
+    .navbarlinks a {
+        display: none;
+    }
+    
+}
+
 .navbar {
     display: flex;
     justify-content: left;
@@ -27,7 +38,7 @@ body {
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 150px;
+    padding-left: 80px;
     max-width: 100%;
     max-height: 100%;
     width: 100%;

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>DineEase Showcase Website - Home Page</title>
-    <link rel="stylesheet" href="Home.css">
-    <script src="Home.js"></script>
+    <link rel="stylesheet" href="Frontend/Home/Home.css">
+    <script src="Frontend/Home/Home.js"></script>
 </head>
 
 <body>
@@ -14,11 +14,23 @@
 
     <section id="herosection">
         <div class="navbar">
-            <img src="../../assets/images/Logo.png" alt="DineEase">
+            <img src="assets/images/Logo.png" alt="DineEase">
             <div class="navbarlinks">
-                <div><a id="homeHyper" href="/Frontend/Home/Home.html">Home</a></div>
-                <div><a href="/Frontend/About_Us/AboutUs.html">About Us</a></div>
-                <div><a href="/Frontend/Contact/Contact.html">Contact</a></div>
+                <div class="links">
+                    <div><a id="homeHyper" href="index.html">Home</a></div>
+                    <div><a href="Frontend/About_Us/AboutUs.html">About Us</a></div>
+                    <div><a href="Frontend/Contact/Contact.html">Contact</a></div>
+                </div>
+
+                <div class="Sandwichmenu">
+                    <div><img src="../../assets/images/Menu Icon.png"></div>
+
+                    <div class="menuDropDown">
+                        <div><a id="homeHyper" href="index.html">Home</a></div>
+                        <div><a href="Frontend/About_Us/AboutUs.html">About Us</a></div>
+                        <div><a href="Frontend/Contact/Contact.html">Contact</a></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -36,18 +48,18 @@
                         with
                         DineEase.</p>
 
-                    <button id="searchRestaurants"><img src="../../assets/images/Search Icon.png">Explore
+                    <button id="searchRestaurants"><img src="assets/images/Search Icon.png">Explore
                         Restaurants</button>
                 </div>
                 <div class="rightdiv" id="rightdiv">
-                    <img id="herosectionIMG" src="../../assets/images/Hero Illustration.png" alt="">
+                    <img id="herosectionIMG" src="assets/images/Hero Illustration.png" alt="">
                 </div>
 
             </div>
-            <div class="costumeshape">
-                <div class="side-rectangle left"></div>
-                <div class="side-rectangle rightTop"></div>
-                <div class="side-rectangle right"></div>
+            <div class="customShapes">
+                <div class="customShapesAngles left"></div>
+                <div class="customShapesAngles rightTop"></div>
+                <div class="customShapesAngles right"></div>
 
             </div>
         </div>
@@ -55,13 +67,13 @@
     </section>
 
     <section id="featuredRestaurants">
-        <div class="costumeshape-down">
-            <div class="side-rectangle left"></div>
-            <div class="side-rectangle right"></div>
+        <div class="DownCustomShapes">
+            <div class="customShapesAngles left"></div>
+            <div class="customShapesAngles right"></div>
         </div>
         <div id="featuredRestaurantsMainDiv">
             <div>
-                <h1 id="featuredRestaurantsH1">Find Your Perfect Dining Spot
+                <h1 id="featuredRestaurantsH1">Featured Restaurants
                 </h1>
                 <p id="featuredRestaurantsP">Discover Unforgettable Dining Destinations</p>
             </div>
@@ -69,16 +81,16 @@
                 <div class="cardDiv">
                     <div class="card">
                         <div class="cardImage">
-                            <img src="../../assets/images/Restaurant2.png" alt="">
+                            <img src="assets/images/Restaurant2.png" alt="">
                         </div>
                         <div class="cardRestaurantnameAndRate">
                             <h2>Sarmale Bistro</h2>
                             <div class="ratedInStar">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
                             </div>
                         </div>
                         <div class="cardDescription">
@@ -94,16 +106,16 @@
 
                     <div class="card">
                         <div class="cardImage">
-                            <img src="../../assets/images/Restaurant1.png" alt="">
+                            <img src="assets/images/Restaurant1.png" alt="">
                         </div>
                         <div class="cardRestaurantnameAndRate">
                             <h2>La Piața</h2>
                             <div class="ratedInStar">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img class="gray" src="../../assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img class="gray" src="assets/images/star.png" alt="Star">
                             </div>
                         </div>
                         <div class="cardDescription">
@@ -119,16 +131,16 @@
 
                     <div class="card">
                         <div class="cardImage">
-                            <img src="../../assets/images/Restaurant3.png" alt="">
+                            <img src="assets/images/Restaurant3.png" alt="">
                         </div>
                         <div class="cardRestaurantnameAndRate">
                             <h2>Halász Fogadó</h2>
                             <div class="ratedInStar">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
-                                <img src="../../assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
+                                <img src="assets/images/star.png" alt="Star">
                             </div>
                         </div>
                         <div class="cardDescription">

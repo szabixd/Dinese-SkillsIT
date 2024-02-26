@@ -27,8 +27,8 @@ body {
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 150px;
-    max-width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
     max-height: 100%;
     width: 100%;
     min-height: 60px;
@@ -38,6 +38,14 @@ body {
 .navbarlinks {
     display: flex;
     gap: 50px;
+    width: 80%;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbarlinks a {
@@ -48,6 +56,37 @@ body {
 
 #homeHyper {
     margin-left: 30px;
+}
+
+.Sandwichmenu {
+    display: none;
+    position: relative;
+    margin-left: auto;
+}
+
+.menuTavtarto {
+    display: inline-block;
+    width: 40px;
+}
+
+.menuDropDown {
+    left: 0;
+    position: absolute;
+    line-height: 30px;
+    padding: 30px;
+    background-color: white;
+    text-align: right;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: none;
+}
+
+.menuDropDown a {
+    padding-top: 180px;
+}
+
+.Sandwichmenu:hover .menuDropDown {
+    display: block;
 }
 
 section {
@@ -88,7 +127,7 @@ section {
     overflow: hidden;
 }
 
-.costumeshape {
+.customShapes {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -99,7 +138,7 @@ section {
     z-index: 1;
 }
 
-.side-rectangle {
+.customShapesAngles {
     position: absolute;
     bottom: 10px;
     width: 100%;
@@ -147,7 +186,7 @@ section {
     z-index: 5;
 }
 
-.costumeshape-down {
+.DownCustomShapes {
     display: flex;
     position: relative;
     top: 0;
@@ -156,7 +195,7 @@ section {
     z-index: 0;
 }
 
-.costumeshape-down>.left {
+.DownCustomShapes>.left {
     margin-bottom: 90px;
     left: 0;
     top: -40px;
@@ -166,7 +205,7 @@ section {
     background-color: #ede9fe;
 }
 
-.costumeshape-down>.right {
+.DownCustomShapes>.right {
     bottom: -10px;
     right: 0;
     height: 150px;
@@ -175,7 +214,7 @@ section {
     background-color: #7c3aed;
 }
 
-.costumeshape-down>.right-bottom {
+.DownCustomShapes>.right-bottom {
     bottom: 0;
     right: 0;
     height: 110px;
@@ -642,4 +681,156 @@ footer>.container {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: black;
+}
+
+@media (max-width: 767px) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        padding-left: 40px;
+    }
+
+
+    .navbarlinks a {
+        display: none;
+    }
+
+    .Sandwichmenu {
+        display: inline-block;
+    }
+
+    .navbarlinks {
+        width: 70%;
+    }
+
+    .menuTavtarto {
+        display: inline-block;
+        width: 40px;
+    }
+
+    .menuDropDown {
+        left: 0;
+        position: absolute;
+        line-height: 30px;
+        padding: 30px;
+        background-color: white;
+        text-align: right;
+        border: 1px solid gray;
+        border-radius: 5px;
+        display: none;
+    }
+
+    .menuDropDown a {
+        padding-top: 180px;
+    }
+
+    .Sandwichmenu:hover .menuDropDown {
+        display: block;
+    }
+
+    .customShapes {
+        display: none;
+    }
+
+    .DownCustomShapes {
+        display: none;
+    }
+
+
+    .DineEase-landsection {
+        padding: 30px;
+        width: 100%;
+        display: block;
+        text-align: left;
+        z-index: 10;
+    }
+
+    .leftdiv {
+        padding: 0;
+        width: 100%;
+    }
+
+    #herosection {
+        min-height: 800px;
+        position: relative;
+        z-index: 100;
+        margin-top: 50px;
+    }
+
+    #herosectionH1 {
+        font-size: 48px;
+        width: 100%;
+
+        br {
+            display: none;
+        }
+    }
+
+    #herosectionP {
+        font-size: 22px;
+        color: #4d5765;
+        padding-bottom: 20px;
+    }
+
+    #searchRestaurants {
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: none;
+        background-color: #7c3aed;
+        color: white;
+        padding: 20px;
+        width: 230px;
+        height: 50px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    #searchRestaurants img {
+        padding-right: 20px;
+    }
+
+    .rightdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+
+    #herosectionIMG {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+        border-bottom: 1px solid gray;
+        top: 0;
+    }
+
+    #featuredRestaurantsMainDiv {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .cardDiv {
+        display: block;
+    }
+
+    .card {
+        text-align: left;
+        max-width: 500px;
+        max-height: 700px;
+    }
+
+    #testimonials {
+        height: 600px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    footer {
+        width: 100%;
+    }
 }
