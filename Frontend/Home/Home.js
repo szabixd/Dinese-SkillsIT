@@ -1,3 +1,4 @@
+/*Test Function for randomise Testimional Card content and position.*/
 document.addEventListener('DOMContentLoaded', function () {
     var cardStorage = document.getElementById('testimonialsSharedCardStorage', 'testimonialsHeaderSharedCard');
     var cards = cardStorage.getElementsByClassName('testimonialsSharedCard');
@@ -29,6 +30,7 @@ function setRandomPosition(card) {
     card.style.left = randomX + 'px';
     card.style.top = randomY + 'px';
 }
+/*Test Function end. */
 
 /*Async function for Top Rated Restaurant fetch.*/
 async function getFeaturedRestaurant() {

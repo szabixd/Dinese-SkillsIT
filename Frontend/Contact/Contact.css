@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
 }
 
+/*Navbar default styles.*/
 .navbar {
     display: flex;
     justify-content: left;
@@ -45,11 +46,13 @@ body {
     color: #121212;
     font-weight: 550;
 }
+/*----Navbar default styles end.*/
 
 #homeHyper {
     margin-left: 30px;
 }
 
+/*Sandiwch default styles*/
 .Sandwichmenu {
     display: none;
     position: relative;
@@ -79,6 +82,7 @@ body {
 .Sandwichmenu:hover .menuDropDown {
     display: block;
 }
+/*----sandiwch styles end.*/
 
 section {
     border: none;
@@ -93,11 +97,13 @@ section {
     flex: 1;
 }
 
+/*Contact section styles*/
 #contactSection {
     max-width: 1440px;
     width: 100%;
 }
 
+/*Right contact div class styles*/
 .rightContactMainDiv {
     margin-left: 20px;
     padding-left: 50px;
@@ -109,6 +115,7 @@ section {
     height: 600px;
 }
 
+/*Main contact div*/
 #contactMainDiv {
     display: grid;
     grid-template-columns: 55% 45%;
@@ -120,7 +127,7 @@ section {
     max-width: 1440px;
 }
 
-
+/*Right contact input, button, messagebox, headers style*/
 #rightContactInputs {
     display: grid;
     align-items: center;
@@ -129,6 +136,7 @@ section {
     place-items: CENTER;
     z-index: 3;
 }
+
 
 .rightContactInputs input {
     z-index: 1;
@@ -251,7 +259,9 @@ section {
     vertical-align: middle;
     padding-right: 20px;
 }
+/*-----Contact section styles end.*/
 
+/*Footer styles.*/
 footer {
     background-color: black;
     color: white;
@@ -309,7 +319,10 @@ footer>.container {
     background-color: #555;
     border-radius: 50%;
 }
+/*Footer styles end------*/
 
+
+/*Custom Scrollbar*/
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -325,6 +338,7 @@ footer>.container {
     background: black;
 }
 
+/*Media link for mobile view.*/
 @media (max-width: 767px) {
     body {
         align-items: center;

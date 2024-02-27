@@ -17,6 +17,7 @@ body {
     flex-direction: column;
 }
 
+/*Navbar styles.*/
 .navbar {
     display: flex;
     justify-content: left;
@@ -35,17 +36,20 @@ body {
     font-size: 16px;
 }
 
+/*NAvbar links styles.*/
 .navbarlinks {
     display: flex;
     gap: 50px;
 }
 
+/*Navbar hyper links styles.*/
 .navbarlinks a {
     text-decoration: none;
     color: #121212;
     font-weight: 550;
 }
 
+/*Sandwichmenu default view.*/
 .Sandwichmenu {
     display: none;
     position: relative;
@@ -76,11 +80,13 @@ body {
 .Sandwichmenu:hover .menuDropDown {
     display: block;
 }
+/*Sandwichmenu end.-----*/
 
 #homeHyper {
     margin-left: 30px;
 }
 
+/*Main section styles.*/
 #PrivacyPolicySection {
     width: 100%;
 }
@@ -89,10 +95,12 @@ body {
     padding: 80px;
 }
 
+/*First paragraph style.*/
 #firsPrivacyParagraph {
     padding-top: 10px;
 }
 
+/*Privacy header lvl1 style.*/
 #privacyH1 {
     font-weight: bold;
     font-size: 54px;
@@ -128,16 +136,19 @@ body {
     flex: 1;
 }
 
+/*Lvl4 header styles.*/
 #privacyH4 {
     padding-top: 20px;
     padding-bottom: 0px;
 }
 
+/*Last paragraph*/
 #lastPrivacyParagraph {
     padding-top: 50px;
     padding-bottom: 5px;
 }
 
+/*Footer styles.*/
 footer {
     background-color: black;
     color: white;
@@ -187,6 +198,7 @@ footer>.container {
     font-size: small;
     padding-top: 20px;
 }
+/*Footer styles end.------*/
 
 .shapeCircle {
     height: 50px;
@@ -195,21 +207,23 @@ footer>.container {
     border-radius: 50%;
 }
 
-/* width */
+/*Custom scrollbar*/
+/* scrollbar width */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Handle */
+/* scrollbar handle */
 ::-webkit-scrollbar-thumb {
     background: black;
 }
 
-/* Handle on hover */
+/* scrollbar handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: black;
 }
 
+/*Media link for mobile view.*/
 @media (max-width: 767px) {
     body {
         align-items: center;
@@ -322,3 +336,4 @@ footer>.container {
         padding-right: 0px;
     }
 }
+/*Mobile view end.*/
