@@ -30,38 +30,40 @@ function setRandomPosition(card) {
     card.style.top = randomY + 'px';
 }
 
+/*Async function for Top Rated Restaurant fetch.*/
 async function getFeaturedRestaurant() {
-    const response = await fetch('https://es2025-s17-hu-r1-backend.onrender.com/api/v1/restaurants/top-rated');
-    const restaurants = await response.json();
-    let toHTML = "";
+    const response = await fetch('https://es2025-s17-hu-r1-backend.onrender.com/api/v1/restaurants/top-rated');/*backend endpoint for json*/
+    const restaurants = await response.json();/*const for json answer.*/
+    let intoTOHTML = "";
 
+    /*Try-catch for answer check*/
     try {
-        for (let resInfo of restaurants) {
-            let ertekelesHTML = "";
+        for (let responseInformation of restaurants) {/*For to check all answer line.*/
+            let rateINHTML = "";/*varible for rate*/
 
-            for (let i = 1; i <= 5; i++) {
-                let csillag = document.createElement('img');
-                csillag.src = i <= resInfo.rating ? './assets/images/star.png' : './assets/images/star.png';
-                csillag.alt = 'Star';
-                if (i - 1 >= resInfo.rating) {
-                    csillag.classList.add('gray');
+            for (let i = 1; i <= 5; i++) {/*for cycle for rate stars 1-5*/
+                let star = document.createElement('img');/*create star img element in star varible*/
+                star.src = i <= responseInformation.rating ? './assets/images/star.png' : './assets/images/star.png';
+                star.alt = 'Star';
+                if (i - 1 >= responseInformation.rating) {
+                    star.classList.add('gray');
                 }
-                ertekelesHTML += csillag.outerHTML;
+                rateINHTML += star.outerHTML;
             }
-
-            toHTML += `
+            /*fill html div on bottom.*/
+            intoTOHTML += `
                 <div class="card">
                     <div class="card-img">
-                        <img src="${resInfo.image}" alt="">
+                        <img src="${responseInformation.image}" alt="">
                     </div>
                     <div class="card-nameandrate">
-                        <h2>${resInfo.name}</h2>
+                        <h2>${responseInformation.name}</h2>
                         <div class="ratestars">
-                            ${ertekelesHTML}
+                            ${rateINHTML}
                         </div>
                     </div>
                     <div class="card-description">
-                        <p>${resInfo.description}</p>
+                        <p>${responseInformation.description}</p>
                     </div>
                     <a class="card-viewrestaurant" href="#">View restaurant »</a>
                 </div>
@@ -69,71 +71,71 @@ async function getFeaturedRestaurant() {
         }
 
     } catch (error) {
-        console.error(error);
+        console.error(error);/*Error showed in console.*/
     }
 
-    document.getElementById('cardHolder').innerHTML += toHTML;
+    document.getElementById('cardHolder').innerHTML += intoTOHTML;
 }
-
+/*Function call*/
 getFeaturedRestaurant();
 
 
 
-
-let toHTMLlater = "";
-let toHTML = "";
+/*Async function for get all restaurant from endpoints with varibles.*/
+let intoTOHTMLlater = "";
+let intoTOHTML = "";
 async function getAllRestaurant() {
-    const response = await fetch('https://es2025-s17-hu-r1-backend.onrender.com/api/v1/restaurants');
+    const response = await fetch('https://es2025-s17-hu-r1-backend.onrender.com/api/v1/restaurants');/*backend endpoint*/
     const restaurants = await response.json();
     let curCard = 0;
 
-    try {
-        for (let resInfo of restaurants) {
+    try {/*try-catch for validate answer*/
+        for (let responseInformation of restaurants) {
             curCard += 1;
-            let ertekelesHTML = "";
+            let rateINHTML = "";
 
             for (let i = 1; i <= 5; i++) {
-                let csillag = document.createElement('img');
-                csillag.src = i <= resInfo.rating ? './assets/images/star.png' : './assets/images/star.png';
-                csillag.alt = 'Star';
-                if (i - 1 >= resInfo.rating) {
-                    csillag.classList.add('gray');
+                let star = document.createElement('img');
+                star.src = i <= responseInformation.rating ? './assets/images/star.png' : './assets/images/star.png';
+                star.alt = 'Star';
+                if (i - 1 >= responseInformation.rating) {
+                    star.classList.add('gray');
                 }
-                ertekelesHTML += csillag.outerHTML;
+                rateINHTML += star.outerHTML;
             }
             if (curCard >= 4) {
-                toHTMLlater += `
+                intoTOHTMLlater += `
                     <div class="card">
                         <div class="cardImage">
-                            <img src="${resInfo.image}" alt="">
+                            <img src="${responseInformation.image}" alt="">
                         </div>
                         <div class="cardRestaurantnameAndRate">
-                            <h2>${resInfo.name}</h2>
+                            <h2>${responseInformation.name}</h2>
                             <div class="ratedInStar">
-                                ${ertekelesHTML}
+                                ${rateINHTML}
                             </div>
                         </div>
                         <div class="cardDescription">
-                            <p>${resInfo.description}</p>
+                            <p>${responseInformation.description}</p>
                         </div>
                         <a class="cardfooter" href="#">View restaurant »</a>
                     </div>
                 `;
             }
             else {
-                toHTML += `
+                intoTOHTML += `
                     <div class="card">
                         <div class="cardImage">
-                            <img src="${resInfo.image}" alt="">
+                            <img src="${responseInformation.image}" alt="">
                         </div>
                         <div class="cardRestaurantnameAndRate">
-                            <h2>${resInfo.name}</h2>
+                            <h2>${responseInformation.name}</h2>
                             <div class="ratedInStar">
-                                ${ertekelesHTML}
+                                ${rateINHTML}
                             </div>
                         </div>
                         <div class="cardDescription">
-                            <p>${resInfo.description}</p>
+                            <p>${responseInformation.description}</p>
                         </div>
                         <a class="cardfooter" href="#">View restaurant »</a>
                     </div>
@@ -145,30 +147,31 @@ async function getAllRestaurant() {
         console.error(error);
     }
 
-    document.getElementById('AllRestaurantCard').innerHTML += toHTML;
+    document.getElementById('AllRestaurantCard').innerHTML += intoTOHTML;
 }
 
 getAllRestaurant();
 
-
-function loadAllRes() {
+/*Function for load all card*/
+function fillAllResponse() {
     var btn = document.getElementById('showMore');
     var lessbtn = document.getElementById('showLess');
 
     if (btn.style.display != 'none') {
-        document.getElementById('AllRestaurantCard').innerHTML += toHTMLlater;
+        document.getElementById('AllRestaurantCard').innerHTML += intoTOHTMLlater;
     }
 
     btn.style.display = 'none';
     lessbtn.style.display = 'flex';
 }
 
-function ShoLessRes() {
+/*Function for less restaurant.*/
+function showLessResponse() {
     var btn = document.getElementById('showLess');
     var morebtn = document.getElementById('showMore');
 
     if (btn.style.display != 'none') {
-        document.getElementById('AllRestaurantCard').innerHTML = toHTML;
+        document.getElementById('AllRestaurantCard').innerHTML = intoTOHTML;
     }
 
     btn.style.display = 'none';
