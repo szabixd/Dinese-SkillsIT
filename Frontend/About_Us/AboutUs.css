@@ -22,11 +22,12 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 30;
     background-color: white;
     padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 80px;
-    max-width: 100%;
+    padding-right: 80px;
     max-height: 100%;
     width: 100%;
     min-height: 60px;
@@ -42,6 +43,36 @@ body {
     text-decoration: none;
     color: #121212;
     font-weight: 550;
+}
+
+.Sandwichmenu {
+    display: none;
+    position: relative;
+}
+
+.menuTavtarto {
+    display: inline-block;
+    width: 40px;
+}
+
+.menuDropDown {
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    line-height: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: none;
+}
+
+.menuDropDown a {
+    padding-top: 10px;
+}
+
+.Sandwichmenu:hover .menuDropDown {
+    display: block;
 }
 
 #homeHyper {
@@ -184,18 +215,6 @@ section {
     box-shadow: 0px 0px 10px 2px white;
 }
 
-@media (max-width:300px) {
-    .timeline {
-        width: 100%;
-        padding: 30px 5px 30px 10px;
-    }
-
-    .timeline ul li .content h3 {
-        color: #7c3aed;
-        font-size: 15px;
-    }
-
-}
 
 #timelineHR {
     border: none;
@@ -304,7 +323,7 @@ footer {
     position: relative;
     max-width: 100%;
     max-height: 100%;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 footer>.container {
@@ -365,4 +384,167 @@ footer>.container {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: black;
+}
+
+@media (max-width: 767px) {
+    body {
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        padding-left: 40px;
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+
+    .navbarlinks a {
+        display: none;
+
+    }
+
+    .Sandwichmenu {
+        display: inline-block;
+        position: relative;
+        width: 27.1%;
+    }
+
+    .navbarlinks {
+        width: 100%;
+    }
+
+    .menuTavtarto {
+        display: inline-block;
+        width: 40px;
+
+    }
+
+    .menuDropDown {
+        right: 0;
+        height: 120px;
+        width: 650px;
+        position: absolute;
+        line-height: 30px;
+        padding-left: 6px;
+        padding-right: 6px;
+        background-color: white;
+        border: 1px solid #999999;
+        border-radius: 5px;
+        display: none;
+        text-align: center;
+    }
+
+    .menuDropDown a {
+        text-align: center;
+        padding-top: 10px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #121212;
+        font-weight: 550;
+    }
+
+    #homeHyper {
+        margin-left: 0px;
+    }
+
+    .Sandwichmenu:hover .menuDropDown {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    .Sandwichmenu::after .menuDropDown {
+        display: none;
+    }
+
+    #AboutUsTimeLine {
+        width: 100%;
+    }
+
+    #AboutUsTimeLineH1H2 h1 {
+        font-size: 52px;
+        color: black;
+        padding-bottom: 0px;
+    }
+
+    .AboutUsTimeLineMainDiv {
+        padding: 80px 0px 0px 0px;
+        max-height: 1000px;
+        height: 800px;
+        max-width: 100%;
+    }
+
+    .AboutUsTeamMainDiv {
+        padding: 0px 0px 0px 0px;
+        max-height: 1000px;
+        height: 800px;
+        max-width: 100%;
+    }
+
+    .timeline {
+        padding: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .timeline ul li {
+        display: inline-block;
+        padding: 0px;
+        position: relative;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .timeline ul {
+        list-style-type: none;
+        border-top: 1px solid #7c3aed;
+        padding: 10px 0px 0px 0px;
+        white-space: nowrap;
+        margin: 0;
+        width: auto;
+    }
+
+    #AboutUsTimeLineDiv {
+        width: 100%;
+        max-width: 800px;
+        padding: 0;
+    }
+
+    .TeamLine div {
+        margin: 20px;
+        flex: 1;
+    }
+
+    .container>.TeamLine {
+        display: flex;
+    }
+
+    .ConnectDineEaseParagraph {
+        text-align: center;
+        display: flex;
+    }
+
+    #ConnectDineEaseP {
+        font-weight: normal;
+        justify-content: center;
+        width: 700px;
+        text-wrap: wrap;
+        padding-top: 50px;
+        font-size: 22px;
+        text-align: unset;
+    }
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: auto;
+    }
 }
