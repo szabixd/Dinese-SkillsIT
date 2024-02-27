@@ -1,8 +1,10 @@
+/*Set site font style and minimal height.*/
 html {
     min-height: 100dvh;
     font-family: Helvetica, sans-serif;
 }
 
+/*Body default formatting*/
 body {
     max-width: 100%;
     max-height: auto;
@@ -17,6 +19,7 @@ body {
     flex-direction: column;
 }
 
+/*Navbar default formatting.*/
 .navbar {
     display: flex;
     justify-content: left;
@@ -35,12 +38,14 @@ body {
     font-size: 16px;
 }
 
+/*On navbar links formatting with class.*/
 .navbarlinks {
     display: flex;
     gap: 50px;
     width: 80%;
 }
 
+/*Classed links format.*/
 .links {
     display: flex;
     gap: 50px;
@@ -48,27 +53,32 @@ body {
     align-items: center;
 }
 
+/*On navbar hyperlinks formatting.*/
 .navbarlinks a {
     text-decoration: none;
     color: #121212;
     font-weight: 550;
 }
 
+/*Home hyperlink tag format.*/
 #homeHyper {
     margin-left: 30px;
 }
 
+/*Default formatting for sandwich menu.*/
 .Sandwichmenu {
     display: none;
     position: relative;
     margin-left: auto;
 }
 
+/*Menu holder class (if you need.)*/
 .menuTavtarto {
     display: inline-block;
     width: 40px;
 }
 
+/*Sandwich drop menu formatting.*/
 .menuDropDown {
     width: 200px;
     position: absolute;
@@ -81,38 +91,46 @@ body {
     display: none;
 }
 
+/*Drop menu hyperlink formatting.*/
 .menuDropDown a {
     padding-top: 10px;
 }
 
+/*if On mouse / hover sandwichmenu icon, show Drop menu.*/
 .Sandwichmenu:hover .menuDropDown {
     display: block;
 }
 
+/*Section default border.*/
 section {
     border: none;
 }
 
+/*Container class default format.*/
 .container {
     display: flex;
     justify-content: space-between;
 }
 
+/*left and right div's formatting.*/
 .rightdiv,
 .leftdiv {
     flex: 1;
 }
 
+/*Hero section right image.*/
 #herosectionIMG {
     position: relative;
     bottom: 0;
     top: 100px;
 }
 
+/*Separated left div formatting.*/
 .leftdiv {
     padding-left: 110px;
 }
 
+/*Land section formatting with grid*/
 .DineEase-landsection {
     padding: 80px;
     display: grid;
@@ -122,11 +140,13 @@ section {
     z-index: 10;
 }
 
+/*Hero Section Main div formatting.*/
 .heroMaindiv {
     position: relative;
     overflow: hidden;
 }
 
+/*Behind hero section lines formatting.*/
 .customShapes {
     position: absolute;
     bottom: 0;
@@ -138,6 +158,7 @@ section {
     z-index: 1;
 }
 
+/*Behind lines angle set.*/
 .customShapesAngles {
     position: absolute;
     bottom: 10px;
@@ -146,6 +167,7 @@ section {
     z-index: 2;
 }
 
+/*Left line parameter set.*/
 .left {
     left: 0;
     bottom: 0px;
@@ -156,6 +178,7 @@ section {
     z-index: 3;
 }
 
+/*right line parameter set.*/
 .right {
     bottom: 5%;
     right: 0;
@@ -166,6 +189,7 @@ section {
     z-index: 4;
 }
 
+/*Top right line parameters.*/
 .rightTop {
     bottom: 15%;
     right: 0;
@@ -176,6 +200,7 @@ section {
     z-index: 4;
 }
 
+/*Right bottom line styles.*/
 .right-bottom {
     bottom: 0;
     right: 0;
@@ -186,6 +211,7 @@ section {
     z-index: 5;
 }
 
+/*Down lines div parameters.*/
 .DownCustomShapes {
     display: flex;
     position: relative;
@@ -195,6 +221,7 @@ section {
     z-index: 0;
 }
 
+/*Down lines left line styles set.*/
 .DownCustomShapes>.left {
     margin-bottom: 90px;
     left: 0;
@@ -205,6 +232,7 @@ section {
     background-color: #ede9fe;
 }
 
+/*Down lines right line styles.*/
 .DownCustomShapes>.right {
     bottom: -10px;
     right: 0;
@@ -214,6 +242,7 @@ section {
     background-color: #7c3aed;
 }
 
+/*Down lines right bottom line style set.*/
 .DownCustomShapes>.right-bottom {
     bottom: 0;
     right: 0;
@@ -223,21 +252,25 @@ section {
     background-color: #7c3aed;
 }
 
+/*Hero section position and visibility set.*/
 #herosection {
     position: relative;
     z-index: 100;
 }
 
+/*Hero section header sizes.*/
 #herosectionH1 {
     font-size: 62px;
 }
 
+/*Hero section paragraph size-s and colors.*/
 #herosectionP {
     font-size: 22px;
     color: #4d5765;
     padding-bottom: 20px;
 }
 
+/*Hero section searchRestaurants button styles.*/
 #searchRestaurants {
     font-size: 16px;
     justify-content: center;
@@ -253,18 +286,22 @@ section {
     margin-top: 20px;
 }
 
+/*Hero section searchrestaurants button img styles.*/
 #searchRestaurants img {
     padding-right: 20px;
 }
 
+/*Featured Restaurant Main Div parameters.*/
 #featuredRestaurantsMainDiv {
     margin-top: 200px;
 }
 
+/*Featured Restaurant section margin set.*/
 #featuredRestaurants {
     margin-bottom: 80px;
 }
 
+/*Center format class styles.*/
 .center {
     height: 100%;
     display: flex;
@@ -273,11 +310,13 @@ section {
     align-items: center;
 }
 
+/*Featured Restaurant Header*/
 #featuredRestaurantsH1 {
     font-size: 48px;
     padding-left: 50px;
 }
 
+/*Featured Restaurants PAragraph.*/
 #featuredRestaurantsP {
     font-size: 22px;
     padding-left: 50px;
@@ -285,11 +324,50 @@ section {
     color: #202735;
 }
 
+/*Card holder div aligns.*/
 .cardDiv {
     display: flex;
     flex-direction: row;
 }
 
+/*Card holder div aligns and colums.*/
+.cardHolder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/*Show more button on site bottom div styles.*/
+#showMore {
+    padding: 30px 0px 0px 0px;
+    border: none;
+    background: none;
+    color: #884dee;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*Show less button style.*/
+#showLess {
+    padding: 30px 0px 0px 0px;
+    border: none;
+    background: none;
+    color: #884dee;
+    font-weight: bold;
+    font-size: 14px;
+    display: none;
+}
+
+/*Showmore div images in button styles.*/
+.ShowMoreDiv img {
+    width: 12px;
+    padding: 3px 0px 0px 5px;
+    height: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Card main styles.*/
 .card {
     display: flex;
     max-width: 360px;
@@ -300,12 +378,14 @@ section {
     padding: 16px;
 }
 
+/*Card images style.*/
 .cardImage img {
     width: 100%;
     height: 200px;
     border-radius: 5px;
 }
 
+/*Card name and rate format.*/
 .cardRestaurantnameAndRate {
     display: flex;
     flex-direction: row;
@@ -315,22 +395,26 @@ section {
     height: 50px;
 }
 
+/*Rated cars style*/
 .ratedInStar {
     justify-content: center;
     align-items: center;
     margin-top: 22px;
 }
 
+/*Class for gray elements.*/
 .gray {
     filter: grayscale(100%);
 }
 
+/*Card description style.*/
 .cardDescription>p {
     font-size: 1.1rem;
     color: #686868;
     font-weight: 500;
 }
 
+/*Card footer or view restaurant hyperlink styles.*/
 .cardfooter {
     color: #7c3aed;
     text-decoration: none;
@@ -339,6 +423,7 @@ section {
     text-align: right;
 }
 
+/*Testimonials section default format.*/
 #testimonials {
     background-color: #ede9fe;
     background-repeat: repeat;
@@ -351,6 +436,7 @@ section {
     align-items: center;
 }
 
+/*Tesimonials card holder set's.*/
 #testimonialsSharedCardStorage {
     padding-top: 60px;
     display: block;
@@ -358,6 +444,7 @@ section {
 
 }
 
+/*Testimonials card in header style.*/
 #testimonialsHeaderSharedCard {
     height: 150px;
     width: 300px;
@@ -368,16 +455,19 @@ section {
     padding: 20px;
 }
 
+/*Testimonial header right div formats.*/
 #testimonialsHeaderRightDiv {
     display: flex;
     align-items: right;
     justify-content: right;
 }
 
+/*Testimonials Header Div class style.*/
 .testimonialsHeaderDiv {
     height: 90%;
 }
 
+/*Testimonial left div formats.*/
 #testimonialsLeftDiv {
     max-height: 50%;
     flex: 1;
@@ -386,6 +476,7 @@ section {
     z-index: 0;
 }
 
+/*Testimonial level 1 header formats.*/
 #testimonialsH1 {
     display: flex;
     justify-content: center;
@@ -395,12 +486,14 @@ section {
     padding-left: 200px;
 }
 
+/*Testimonials short text cards format.*/
 #testimonialsShortCard {
     width: 300px;
     max-width: 100%;
     text-wrap: wrap;
 }
 
+/*Testimonials cards main class.*/
 .testimonialsSharedCard {
     max-height: 200px;
     width: 400px;
@@ -414,6 +507,7 @@ section {
     flex: 1;
 }
 
+/*Testimonials cards content style.*/
 .testimonialsSharedCard-content {
     display: flex;
     padding: 20px;
@@ -421,21 +515,25 @@ section {
     align-items: center;
 }
 
+/*Testimonials card description.*/
 .testimonialsSharedCard-description {
     font-size: 18px;
     color: #151c2b;
 }
 
+/*Testimonialls card authors style.*/
 .testimonialsSharedcardAuthor {
     font-weight: bold;
     font-size: 14px;
     bottom: 0;
 }
 
+/*Find Resturant main container style.*/
 #findRestaurantsContainer {
     margin: 40px;
 }
 
+/*Find Restaurant inputs formats and svg background.*/
 #findRestaurantsInput {
     padding-left: 50px;
     background: url(../../assets/images/Search\ Iconvector.svg) no-repeat left;
@@ -448,12 +546,14 @@ section {
     width: 90%;
 }
 
+/*Simple Search contianer div class styles.*/
 .findRestaurantsSimpeContainer {
     display: grid;
     grid-template-columns: 250px 36px 46px;
     justify-content: center;
 }
 
+/*Simple Search container input styles.*/
 .findRestaurantsSimpeContainer input {
     width: calc(100% - 1700px);
     background-color: #f5f5f5;
@@ -465,6 +565,7 @@ section {
     padding-right: 20px;
 }
 
+/*Simple Search container active input styles.*/
 .findRestaurantsSimpeContainer input:active {
     width: 12%;
     background-color: #f5f5f5;
@@ -475,6 +576,7 @@ section {
     padding-left: 10px;
 }
 
+/*Search restaurant checkbox default.*/
 #findRestaurantsSimpleSearchCheckbox {
     display: flex;
     align-items: center;
@@ -484,6 +586,7 @@ section {
     border-radius: 10px;
 }
 
+/*Search simple restaurant container button style.*/
 .findRestaurantsSimpeContainer button {
     height: 100%;
     width: 46px;
@@ -497,28 +600,34 @@ section {
     background-color: #ede9fe;
 }
 
+/*REstaurant search main container*/
 .findRestaurantsContainer {
     margin-bottom: 20px;
 }
 
+/*Advanced search restaurant default display*/
 #findRestaurantsAdvancedContainer {
     display: none;
 }
 
+/*Hide class for hide-d items.*/
 .hide {
     display: none !important;
 }
 
+/*Checkbox default display.*/
 input[type="checkbox"] {
     display: none;
 }
 
+/*If advanced restaurant checkbox checked, display block.*/
 input[type="checkbox"]:checked~#findRestaurantsAdvancedContainer {
     display: block;
     align-items: center;
     text-align: center;
 }
 
+/*If advanced restaurant checkbox checked, input styles changed.*/
 input[type="checkbox"]:checked~#findRestaurantsAdvancedContainer input {
     background-color: #f5f5f5;
     margin: 5px;
@@ -531,6 +640,7 @@ input[type="checkbox"]:checked~#findRestaurantsAdvancedContainer input {
     padding-left: 20px;
 }
 
+/*If advanced restaurant checkbox checked, paragraph styles changed.*/
 input[type="checkbox"]:checked~#findRestaurantsAdvancedContainer p {
     font-size: 14px;
     font-weight: bold;
@@ -539,6 +649,7 @@ input[type="checkbox"]:checked~#findRestaurantsAdvancedContainer p {
 
 }
 
+/*If advanced restaurant checkbox checked, select styles changed and set.*/
 input[type="checkbox"]:checked~#findRestaurantsAdvancedContainer select {
     font-size: 16px;
     margin: 5px;
@@ -551,6 +662,7 @@ input[type="checkbox"]:checked~#findRestaurantsAdvancedContainer select {
     padding: 10px 10px 10px 15px;
 }
 
+/*If advanced restaurant checkbox checked, button styles changed.*/
 input[type="checkbox"]:checked~#findRestaurantsAdvancedContainer button {
     width: 43px;
     height: 43px;
@@ -561,12 +673,12 @@ input[type="checkbox"]:checked~#findRestaurantsAdvancedContainer button {
     top: 5px;
 }
 
+/*If advanced restaurant checkbox checked, simple search container hide.*/
 input[type="checkbox"]:checked~.findRestaurantsSimpeContainer {
     display: none;
 }
 
-.findRestaurantsAdvancedContainer {}
-
+/*Advanced search location input background set.*/
 #findRestaurantsAdvancedSearchUpContainer>#selectRestaurantLocation {
     background: url(../../assets/images/Location\ Icon.png) no-repeat left;
     background-position-x: 10px;
@@ -579,6 +691,7 @@ input[type="checkbox"]:checked~.findRestaurantsSimpeContainer {
 
 }
 
+/*Search Restaurant card main div.*/
 .findRestaurantsCardDiv {
     display: flex;
     justify-content: center;
@@ -586,6 +699,7 @@ input[type="checkbox"]:checked~.findRestaurantsSimpeContainer {
     margin-bottom: 40px;
 }
 
+/*Search restaurant hyperlink style set.*/
 .findRestaurantsCardDiv a {
     text-decoration: none;
     color: #884dee;
@@ -594,35 +708,26 @@ input[type="checkbox"]:checked~.findRestaurantsSimpeContainer {
     float: right;
 }
 
+/*Search Restaurant Level 1 Header*/
 #findRestaurantsH1 {
     text-align: center;
     font-size: 48px;
 }
 
+/*Search Restaurant paragraph style set.*/
 #findRestaurantsP {
     font-size: 22px;
     color: #202735;
     text-align: center;
 }
 
-.card-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 0;
-    height: 50px;
+/*Show more restaurant display mode and margin set.*/
+.showmoreRestaurant {
+    display: block;
+    margin: 30px 10px -10px 10px;
 }
 
-.card-header h2 {
-    padding-left: 10px;
-}
-
-.card-header img {
-    width: 25px;
-    height: 25px;
-    padding: 0px;
-}
-
+/*Footer styles.*/
 footer {
     background-color: black;
     color: white;
@@ -634,26 +739,31 @@ footer {
     margin-top: auto;
 }
 
+/*Footer container display set.*/
 footer>.container {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
+/*Footer left and right div.*/
 #footerleftdiv,
 #footerrightdiv {
     position: relative;
     flex: 1;
 }
 
+/*Separated footer right div.*/
 #footerrightdiv {
     padding-right: 150px;
 }
 
+/*Footer right div image styles.*/
 #footerrightdiv img {
     float: right;
     padding: 5px;
 }
 
+/*Footer right div paragraph styles.*/
 #footerrightdiv p {
     width: 120px;
     text-align: left;
@@ -661,17 +771,20 @@ footer>.container {
     margin-right: 0;
 }
 
+/*Privacy hyperlink style.*/
 #privacyGO {
     text-decoration: none;
     color: white;
 }
 
+/*Copyright style.*/
 #copyrightSmall {
     color: lightgray;
     font-size: small;
     padding-top: 20px;
 }
 
+/*Circle for herosection (not used)*/
 .shapeCircle {
     height: 50px;
     width: 50px;
@@ -679,21 +792,23 @@ footer>.container {
     border-radius: 50%;
 }
 
-/* width */
+/*Custom scrollbar*/
+/* scrollbar width */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Handle */
+/* scrollbar Handle */
 ::-webkit-scrollbar-thumb {
     background: black;
 }
 
-/* Handle on hover */
+/* scrollbar handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: black;
 }
 
+/*Media link for mobile view.*/
 @media (max-width: 767px) {
     body {
         align-items: center;
@@ -846,6 +961,10 @@ footer>.container {
     }
 
     .cardDiv {
+        display: block;
+    }
+
+    .cardHolder {
         display: block;
     }
 
