@@ -5,8 +5,8 @@ html {
 
 body {
     max-width: 100%;
-    width: 100%;
     max-height: auto;
+    width: 100%;
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
@@ -17,29 +17,18 @@ body {
     flex-direction: column;
 }
 
-@media (max-width: 767px) {
-    .navbarlinks {
-        display: none;
-    }
-
-    .navbarlinks a {
-        display: none;
-    }
-    
-}
-
 .navbar {
     display: flex;
     justify-content: left;
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 30;
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 80px;
-    max-width: 100%;
+    padding-right: 80px;
     max-height: 100%;
     width: 100%;
     min-height: 60px;
@@ -57,6 +46,37 @@ body {
     font-weight: 550;
 }
 
+.Sandwichmenu {
+    display: none;
+    position: relative;
+    margin-left: auto;
+}
+
+.menuTavtarto {
+    display: inline-block;
+    width: 40px;
+}
+
+.menuDropDown {
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    line-height: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: none;
+}
+
+.menuDropDown a {
+    padding-top: 10px;
+}
+
+.Sandwichmenu:hover .menuDropDown {
+    display: block;
+}
+
 #homeHyper {
     margin-left: 30px;
 }
@@ -70,17 +90,27 @@ body {
 }
 
 #firsPrivacyParagraph {
-    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 #privacyH1 {
     font-weight: bold;
     font-size: 54px;
+    padding-bottom: 0;
+    margin: 20px 0 0 0;
 }
+
+.privacyMain #privacyH2 {
+    font-size: 18px;
+    padding-top: 0;
+    color: #81848c;
+}
+
+
 
 .privacyMain h4 {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .privacyMain p {
@@ -118,7 +148,6 @@ footer {
     max-height: 100%;
     margin-top: auto;
     bottom: 0;
-
 }
 
 footer>.container {
@@ -179,4 +208,117 @@ footer>.container {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: black;
+}
+
+@media (max-width: 767px) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        padding-left: 40px;
+        width: 100%;
+    }
+
+
+    .navbarlinks a {
+        display: none;
+
+    }
+
+    .Sandwichmenu {
+        display: inline-block;
+        position: relative;
+        width: 17.5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbarlinks {
+        width: 20%;
+    }
+
+    .menuTavtarto {
+        display: inline-block;
+        width: 40px;
+
+    }
+
+    .menuDropDown {
+        right: 0;
+        height: 120px;
+        width: 650px;
+        position: absolute;
+        line-height: 30px;
+        padding-left: 6px;
+        padding-right: 6px;
+        background-color: white;
+        border: 1px solid #999999;
+        border-radius: 5px;
+        display: none;
+        text-align: center;
+    }
+
+    .menuDropDown a {
+        text-align: center;
+        padding-top: 10px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #121212;
+        font-weight: 550;
+    }
+
+    #homeHyper {
+        margin-left: 0px;
+    }
+
+    .Sandwichmenu:hover .menuDropDown {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 90px;
+    }
+
+    .Sandwichmenu::after .menuDropDown {
+        display: none;
+    }
+
+    .privacyMain {
+        padding: 40px;
+    }
+
+    #privacyH1 {
+        font-weight: bold;
+        font-size: 52px;
+        padding-bottom: 0;
+        margin: 50px 0 0 0;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 50px 10px 50px 100px;
+        text-align: left;
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        margin-top: auto;
+        overflow: hidden;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+
+    footer>.container {
+        display: flex;
+        width: 90%;
+    }
+
+    #footerrightdiv {
+        padding-right: 0px;
+    }
 }

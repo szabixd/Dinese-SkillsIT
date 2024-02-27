@@ -23,13 +23,14 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 30;
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 80px;
-    width: 100%;
+    padding-right: 80px;
     max-height: 100%;
+    width: 100%;
     min-height: 60px;
     font-size: 16px;
 }
@@ -49,9 +50,38 @@ body {
     margin-left: 30px;
 }
 
+.Sandwichmenu {
+    display: none;
+    position: relative;
+}
+
+.menuTavtarto {
+    display: inline-block;
+    width: 40px;
+}
+
+.menuDropDown {
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    line-height: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: none;
+}
+
+.menuDropDown a {
+    padding-top: 10px;
+}
+
+.Sandwichmenu:hover .menuDropDown {
+    display: block;
+}
+
 section {
     border: none;
-    flex: 1;
 }
 
 .container {
@@ -65,6 +95,7 @@ section {
 
 #contactSection {
     max-width: 1440px;
+    width: 100%;
 }
 
 .rightContactMainDiv {
@@ -292,4 +323,184 @@ footer>.container {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: black;
+}
+
+@media (max-width: 767px) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        padding-left: 40px;
+        width: 100%;
+    }
+
+
+    .navbarlinks a {
+        display: none;
+
+    }
+
+    .Sandwichmenu {
+        display: inline-block;
+        position: relative;
+        width: 27.1%;
+    }
+
+    .navbarlinks {
+        width: 100%;
+    }
+
+    .menuTavtarto {
+        display: inline-block;
+        width: 40px;
+
+    }
+
+    .menuDropDown {
+        right: 0;
+        height: 120px;
+        width: 650px;
+        position: absolute;
+        line-height: 30px;
+        padding-left: 6px;
+        padding-right: 6px;
+        background-color: white;
+        border: 1px solid #999999;
+        border-radius: 5px;
+        display: none;
+        text-align: center;
+    }
+
+    .menuDropDown a {
+        text-align: center;
+        padding-top: 10px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #121212;
+        font-weight: 550;
+    }
+
+    #homeHyper {
+        margin-left: 0px;
+    }
+
+    .Sandwichmenu:hover .menuDropDown {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    .Sandwichmenu::after .menuDropDown {
+        display: none;
+    }
+
+    #contactSection>.container {
+        width: 100%;
+    }
+
+    #contactMainDiv {
+        display: block;
+        z-index: 1;
+        margin-top: 100px;
+        width: 100%;
+        max-width: 767px;
+        padding-top: 0;
+        padding-left: 28px;
+        box-sizing: border-box;
+    }
+
+    .contact-informationDiv {
+        margin-left: 10px;
+        margin-bottom: 60px;
+        color: white;
+        background-color: #7c3aed;
+        width: 800px;
+        border-radius: 10px;
+        padding: 40px;
+        max-width: 80%;
+        height: 600px;
+    }
+
+
+    .rightContactMainDiv {
+        max-width: 800px;
+        max-height: 100%;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        padding-left: 0;
+        margin-left: 10px;
+    }
+
+    .rightContactHeader h1 {
+        font-size: 38px;
+        padding-left: 0;
+        margin: 0;
+        max-width: 500px;
+    }
+
+    .rightContactHeader h2 {
+        font-size: 18px;
+        padding-left: 0;
+        padding-bottom: 20px;
+        color: #3a3f4c;
+        max-width: 500px;
+    }
+
+    #rightContactInputs {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 50% 52%;
+        grid-template-rows: 30%;
+        place-items: CENTER;
+        z-index: 3;
+        padding-left: 0;
+    }
+
+    .rightContactInputs input {
+        z-index: 1;
+        margin-bottom: 10px;
+        padding: 10px 10px 10px 20px;
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: #f5f5f5;
+        font-size: 16px;
+    }
+
+    .messageBoxInput input {
+        text-align: left;
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        width: 644px;
+        height: 150px;
+        min-width: 180px;
+        max-width: 800px;
+        font-size: 16px;
+        margin-left: 332px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 50px 10px 50px 100px;
+        text-align: left;
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        margin-top: auto;
+        bottom: 0;
+        box-sizing: border-box;
+    }
 }

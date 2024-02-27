@@ -757,6 +757,10 @@ footer>.container {
         text-align: center;
     }
 
+    .Sandwichmenu::after .menuDropDown {
+        display: none;
+    }
+
     .customShapes {
         display: none;
     }
