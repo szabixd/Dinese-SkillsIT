@@ -1,1 +1,1 @@
-https://dinese-preview.netlify.app - Demo
+https://dinese-preview.netlify.app - Demo in 1400x1080
